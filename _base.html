@@ -81,7 +81,7 @@
         </a>
       </div>
 
-  <div class="navbar">
+  <div class="navbar navbar-inverse">
     <div class="navbar-inner">
       <div class="container">
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -92,7 +92,6 @@
         <div class="nav-collapse collapse">
           <ul class="nav">
             <li id="nav-home"><a href="{{root_path}}/index.html">Home</a></li>
-            <li id="nav-about"><a href="{{root_path}}/about/index.html">About</a></li>
             <li id="nav-lessons"><a href="{{root_path}}/4_0/index.html">Lessons</a></li>
             <li id="nav-bootcamps"><a href="{{root_path}}/bootcamps/index.html">Boot Camps</a></li>
             <li id="nav-blog"><a href="{{root_path}}/blog/index.html">Blog</a></li>
@@ -120,15 +119,27 @@
       <div class="row-fluid">
         <div class="span10 offset1">
         {% block content %}{% endblock content %}
-	{% block details %}{% endblock details %}
-	{% block comments %}{{disqus(page.title, page.filename)}}{% endblock comments %}
+        {% block details %}{% endblock details %}
+        {% block comments %}{{disqus(page.title, page.filename)}}{% endblock comments %}
         </div>
       </div>
 
       <div class="footer">
-        <a href="{{root_path}}/license.html"><img src="{{root_path}}/img/creative-commons-attribution-license.png" alt="Creative Commons Attribution License" /></a>
-        <span class="label"><a href="https://github.com/swcarpentry">Fork us on github</a></span>
-        <a class="pull-right bugreport" href="mailto:{{contact_email}}?subject=bug%20in%20{{filename}}">Report a bug</a>
+        <a href="{{root_path}}/license.html">
+          <img src="{{root_path}}/img/creative-commons-attribution-license.png" alt="Creative Commons Attribution License" />
+        </a>
+        <span class="pull-right">
+          <a class="label"
+             href="https://twitter.com/swcarpentry">Twitter</a>
+          <a class="label"
+             href="https://github.com/swcarpentry">GitHub</a>
+          <a class="label"
+             href="http://software-carpentry.org/feed.xml">RSS</a>
+          <a class="bugreport label"
+             href="mailto:{{contact_email}}?subject=bug%20in%20{{filename}}">
+             Bug Report
+          </a>
+        </span>
       </div>
 
     </div>

@@ -1,6 +1,7 @@
 {
     "author_id" : {
         "anderson.c" : "Carlos Anderson",
+        "bostroem.a" : "Azalee Bostroem",
         "buske.o" : "Orion Buske",
         "cannam.c" : "Chris Cannam",
         "chapman.h" : "Hanah Chapman",
@@ -12,6 +13,7 @@
         "huff.k" : "Katy Huff",
         "jackson.m" : "Mike Jackson",
         "lawson.a" : "Ainsley Lawson",
+        "limare.n" : "Nicolas Limare",
         "mcglinn.d" : "Dan McGlinn",
         "pipitone.j" : "Jon Pipitone",
         "varoquaux.n" : "Nelle Varoquaux",
@@ -55,10 +57,11 @@
         "venues" : "Venues",
         "venues/bernstein-berlin" : "Bernstein Center - Berlin",
         "venues/boston" : "Boston",
-	"venues/caltech" : "Caltech",
+        "venues/caltech" : "Caltech",
         "venues/cef-2011" : "CEF 2011",
         "venues/columbia-university" : "Columbia University",
         "venues/ebi-cambridge" : "EBI Cambridge",
+        "venues/edinburgh" : "University of Edinburgh",
         "venues/halifax" : "Halifax",
         "venues/ictp" : "International Center for Theoretical Physics",
         "venues/indiana-university" : "Indiana University",

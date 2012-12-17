@@ -6,11 +6,12 @@
   <meta name="subglob" content="*/*/*.html" />
 {% endblock file_metadata %}
 
-{% block content %}
-
 {% block navhighlight %}{{navhighlight('blog')}}{% endblock navhighlight %}
 
-<h2>Recent Posts</h2>
+{% block content %}
+<h2>Recent Posts
+  <a href="http://software-carpentry.org/feed.xml">
+    <img class="pull-right" src="../img/rss-icon-blue.png"/></a></h2>
 
 {% for post in page.children[-page.blog_history_length:]|reverse %}
   <h3><a href="{{site}}/blog/{{post.index_link()}}">{{post.title}}</a></h3>
@@ -39,10 +40,10 @@
       <th class="left"><a href="#{{year}}">{{year}}</a></th>
       {% for month in page.months %}
         <td>
-	  {% if page.posts(year, month) %}<a href="#{{year}}-{{month}}">{% endif %}
-	    {{page.posts(year, month)|length}}
-	  {% if page.posts(year, month) %}</a>{% endif %}
-	</td>
+          {% if page.posts(year, month) %}<a href="#{{year}}-{{month}}">{% endif %}
+            {{page.posts(year, month)|length}}
+          {% if page.posts(year, month) %}</a>{% endif %}
+        </td>
       {% endfor %}
     </tr>
   {% endfor %}
@@ -57,12 +58,12 @@
     {% if page.posts(year, month) %}
       <h4 id="{{year}}-{{month}}">{{page.month_name(month)}}</h4>
       <table class="table table-striped table-condensed blogindex">
-	{% for post in page.posts(year, month)|reverse %}
-	  <tr>
-	    <td class="date">{{post.post_date}}:</td>
-	    <td><a href="{{site}}/blog/{{post.index_link()}}">{{post.title}}</a></td>
-	  </tr>
-	{% endfor %}
+        {% for post in page.posts(year, month)|reverse %}
+          <tr>
+            <td class="date">{{post.post_date}}:</td>
+            <td><a href="{{site}}/blog/{{post.index_link()}}">{{post.title}}</a></td>
+          </tr>
+        {% endfor %}
       </table>
     {% endif %}
   {% endfor %}
