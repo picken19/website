@@ -10,7 +10,7 @@
 
 <p>[[UNDER CONSTRUCTION]]</p>
 
-<p>Try executing these short tests to see if you have all the necessary software installed on your machine. If a test fails, then follow the <a href="troubleshooting.html">troubleshooting</a> tutorial for help installing the appropriate software.</p>
+<p>Try executing these short tests to see if you have all the necessary software installed on your machine. If a test fails, either follow the title links to find out how to install the software or try the <a href="troubleshooting.html">troubleshooting</a> tutorial.</p>
 
 <div class="toc">
 <h4>Contents</h4>
@@ -28,109 +28,101 @@
 <div>
     
     <!-- Test 1 -->
-    <h3 id="1" class="well well-small">1 The Terminal Window</h3>
-    <div class="indent">
+    <h3>1 The Terminal Window</h3>
     <p>All computers come with a native terminal window (also commonly called a command-line <a href="http://en.wikipedia.org/wiki/Shell_%28computing%29">shell</a>). If you are unfamiliar with the terminal or how to find it on your computer, see the page <a href="terminal.html">On Getting a Terminal Window</a>.</p>
     
     <img src="{{root_path}}/img/setup/1.png" alt="The terminal screenshot 1" />
-    </br>
+    <br />
     
     <p>Now try a series of commands in your terminal. The $ represents your information that the terminal prints automatically (like your username or the host name). At the prompt, enter:</p>
-    <code>$ whoami</code>
+    <pre>$ whoami</pre>
     <p>You should be told your user name, e.g.:</p>
-    <code>caitlynpickens</code>
+    <pre>caitlynpickens</pre>
     <p>Next, try an automated build:</p>
-    <code>$ make --version</code>
+    <pre>$ make --version</pre>
     <p>A version number should be printed:</p>
-    <code>GNU MAKE 3.81</code>
+    <pre>GNU MAKE 3.81</pre>
     
     <img src="{{root_path}}/img/setup/terminal2.png" alt="The terminal screenshot 2" />
-    
-    <p>You have now completed the first software setup test!</p>
-    </br>
-    </div>
+    <br />
     
     <!-- Test 2 -->
-    <h4 id="2">2 Text Editors for Code</h4>
-    <div class="indent">    
+    <h3 id="2">2 Text Editors for Code</h3>  
     <p>In this boot camp, you will be writing your own code, which requires a text editor. The choice of which editor to use is up to you. Some suggestions are: nano, VI, Emacs, and XEmacs. Decide which editor you want to use, and then make sure it is installed by attempting to create a new file using that editor or checking the version (as shown below). If the editor is not yet installed, follow the links provided above to the editor's website and follow their installation instructions.</p>
     
     <h4><a href="http://www.nano-editor.org/">nano</a>:</h4>
     <p>nano is designed as a free replacement for the Pico text editor. To see if you have nano installed, enter the following command at the prompt:</p>
-    <code>$ nano --version</code>
+    <pre>$ nano --version</pre>
     <p>You should be given a version number, e.g.:</p>
-    <code>GNU nano version 2.0.6 (compiled 10:55:37, May 25 2011)</code>
+    <pre>GNU nano version 2.0.6 (compiled 10:55:37, May 25 2011)</pre>
     
     <h4><a href="http://www.vim.org/">VI</a>:</h4>
     <p>VIM is a highly configurable text editor designed to enable efficient text editing. To see if you have VIM installed, enter the following command at the prompt:</p>
-    <code>$ vi --version</code>
+    <pre>$ vi --version</pre>
     <p>You should be given a version number, e.g.:</p>
-    <code>VIM - Vi IMproved 7.3 (2010 Aug 15, compiled Feb 21 2012 18:42:47)</code>
+    <pre>VIM - Vi IMproved 7.3 (2010 Aug 15, compiled Feb 21 2012 18:42:47)</pre>
     
     <h4><a href="http://www.gnu.org/software/emacs/">Emacs</a>:</h4>
     <p>Emacs is an open-source text editor. To see if you have Emacs installed, enter the following command at the prompt:</p>
-    <code>$ emacs --version</code>
+    <pre>$ emacs --version</pre>
     <p>You should be given a version number, e.g.:</p>
-    <code>GNU Emacs 22.1.1</code>
+    <pre>GNU Emacs 22.1.1</pre>
     
     <h4><a href="hhttp://www.xemacs.org/">XEmacs</a>:</h4>
     <p>XEmacs is the next-generation version of Emacs. It is extremely customizable. To see if you have XEmacs installed, enter the following command at the prompt:</p>
-    <code>$ xemacs --version</code>
+    <pre>$ xemacs --version</pre>
     <p>You should be given a version number, e.g.:</p>
-    <code>-bash: xemacs: command not found</code>
+    <pre>-bash: xemacs: command not found</pre>
     <p>This error message appeared because XEmacs is not yet installed. If I want to use XEmacs as my primary text editor, I still need to install it. After install, I test the version again:</p>
-    <code>XEmacs 21.5 (beta31) "ginger"</code>
-    </div>
+    <pre>XEmacs 21.5 (beta31) "ginger"</pre>
    
     <!-- Test 3 -->
-    <h3 id="3" class="well well-small">3 Python for Scripting</h3>
-    <div class="indent">   
+    <h3 id="3">3 Python for Scripting</h3>  
     <p>Any Python 2 version will suffice for this class. We will <em>not</em> be teaching Python 3, so please make sure that you have either Python 2.6 or 2.7 versions.</p>
     
     <p>To check that it's installed and what version you have, at the prompt, enter:</p>
     
-    <code>
+    <pre>
         $ python --version
-    </code>
+    </pre>
     
     <p>You should be given a version number, e.g.:</p>
-    <code>
+    <pre>
         Python 2.7.3
-    </code>
+    </pre>
     
     <p>Now, check its behavior:</p>
-    <code>
+    <pre>
         $ python
         &gt;&gt;&gt; print 2+2
         4
-    </code>
+    </pre>
     
     <p>And, check it has the sqlite3 library if your boot camp is covering relational databases:</p>
-    <code>
+    <pre>
         &gt; import sqlite3
-    </code>
+    </pre>
     
-    <p>If all is fine it won't complain.</p>
+    <p>If all is fine, no message will print.</p>
     
     <img src="{{root_path}}/img/setup/python1.png" alt="Python test screenshot" />
     </br>
     
     <p> If any portion of this test did not pass, then you probably do not have Python 2.6 or later installed. See On Installing Python for installation guidelines.</p>
-    </div>
      
     <!-- Test 4 -->    
-    <h3 id="4" class="well well-small">4 Python setuptools for Installing Python Packages</h3>    
+    <h3 id="4">4 Python setuptools for Installing Python Packages</h3>    
  
     <!-- Test 5 -->
-    <h3 id="5" class="well well-small">5 Python nose for Running Unit Tests</h3>
+    <h3 id="5">5 Python nose for Running Unit Tests</h3>
     
     <!-- Test 6 -->
-    <h3 id="6" class="well well-small">6 Version Control </h3>
+    <h3 id="6">6 Version Control </h3>
     
     <p>BitBucket, github tests, Mercurial</p>
     
     <!-- Test 7 -->
-    <h3 id="7" class="well well-small">7 SQLite</h3>
+    <h3 id="7">7 SQLite</h3>
     
 </div>
 
